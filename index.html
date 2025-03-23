@@ -56,7 +56,7 @@
         const MONTH = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
         var weekName = WEEK[today.getDay()];
-        var monthName = MONTH[today.getMonth()];
+        var monthName = MONTH[today.getMonth()].charAt(0).toUpperCase() + MONTH[today.getMonth()].slice(1).toLowerCase();
         var date = today.getDate();
         var year = today.getFullYear();
         var weekDisplay = document.getElementById('week');
