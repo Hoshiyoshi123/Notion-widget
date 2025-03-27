@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            color: #f0f0f0;
+            color: #EDEDED;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,9 +19,15 @@
         }
 
         .clock-container {
+            display: flex;
+            gap: 40px;
             text-align: center;
-            width: 100%;
-            max-width: 400px;
+        }
+
+        .clock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .time {
@@ -33,23 +39,19 @@
             font-size: 1.2rem;
             opacity: 0.8;
         }
-
-        iframe {
-            width: 100%;
-            height: auto;
-            border: none;
-            overflow: hidden;
-        }
     </style>
 </head>
 <body>
 
     <div class="clock-container">
-        <div class="time" id="manila-time">--:--</div>
-        <div class="city">Manila</div>
-        <br>
-        <div class="time" id="berlin-time">--:--</div>
-        <div class="city">Berlin</div>
+        <div class="clock">
+            <div class="time" id="manila-time">--:--</div>
+            <div class="city">Manila</div>
+        </div>
+        <div class="clock">
+            <div class="time" id="berlin-time">--:--</div>
+            <div class="city">Berlin</div>
+        </div>
     </div>
 
     <script>
@@ -65,5 +67,7 @@
     </script>
 
 </body>
+</html>
+
 </html>
 
